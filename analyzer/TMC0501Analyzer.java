@@ -32,6 +32,27 @@ public class TMC0501Analyzer
   final int IRG_BRANCH = 0b1000000000000;
   final int IRG_COND = 0b0100000000000;
 
+  // SR-60 and PC-100 IO instructions
+  final int CHARPRNT = 0x0a68;
+  final int FUNCPRINT = 0x0a78;
+  final int CLRPRNT = 0x0a88;
+  final int STEPPRNT = 0x0a98;
+  final int PPRINT = 0x0aa8;
+  final int PADV = 0x0ab8;
+  final int MEMO = 0x0af8;
+  final int DR8EXT = 0x0a28;
+  final int EXTDR8 = 0x0a38;
+  final int TOFF = 0x0a48;
+  final int RDNT = 0x0a58;
+  final int WRON = 0x0ac8;
+  final int AUXID = 0x0ae8;
+  final int AUXDATA = 0x0ad8;
+  final int CHARDISP = 0x0a66;
+  final int FUNCDISP = 0x0a76;
+  final int CLRDISP = 0x0a86;
+  final int STEPDISP = 0x0a96;
+  final int DPRINT = 0x0aa6;
+
   long t;
   long ioReg; // 16*4 bit value
   int irgReg, extReg;
