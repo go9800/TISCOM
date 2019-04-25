@@ -1,0 +1,2 @@
+Class-Path: TISCOM.jar
+Main-Class: analyzer.TMC0501Analyzer
